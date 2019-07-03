@@ -1,0 +1,186 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+// Bootstrap
+@import '~materialize-css/dist/css/materialize.min';
+
+//Tipografia
+html{
+	font-family: 'Open Sans', sans-serif;
+	min-height: 100vh;
+}
+.title{
+	text-transform: uppercase;
+}
+.bold{
+	font-weight: 700;
+}
+.subtitulo{
+	margin: 0 50px -10px 50px;
+	background:#be282c;
+	z-index: 99;
+}
+.small{
+	font-size: .8rem;
+}
+.italic{
+	font-style: italic;
+}
+//Colores
+.azul{
+	background:#131b37;
+}
+.azul-text{
+	color:#131b37;
+}
+.rojo{
+	background:#be282c;
+}
+.rojo-text{
+	color:#be282c;
+}
+.gris{
+	background:#606060;
+}
+.gris-text{
+	color:#606060;
+}
+.f{
+	color: #3b5998;
+}
+.t{
+	color: #1da1f2;
+}
+.i{
+	color: #e1306c;
+}
+.l{
+	color: #0077b5;
+}
+h2{
+	font-size: 26px;
+}
+//Fondos
+.fondo1{
+	background:url('/img/fondo1.png') no-repeat top center;
+	background-size: cover;
+	margin-top: -64px;
+	padding-top: 84px;
+	height: 80vh;
+}
+.hero{
+	background: url('/img/hero.jpg') no-repeat top center;
+	background-size: cover;
+	margin-top: -56px;
+	padding-top: 84px;
+	height: 100vh;
+}
+
+//helpers
+nav ul li a{
+	padding-top: 5px; 
+}
+nav ul li a:hover{
+	padding-top: 0px;
+	border-top: 5px solid #be282c;
+	background: none;
+}
+nav ul li a.menu:hover{
+	padding-top: 0px;
+	border-top: 5px solid #fff;
+	background: none;
+}
+.hover{
+	border: none;
+}
+#menu{
+	transition: all .5s ease;
+}
+.btn-floating:hover{
+	background:#313d7a;
+}
+.valign-wrapper{
+	height: 100vh;
+	margin-top: -64px;
+}
+.btn:hover{
+	background:#606060;
+}
+//Rollover
+.contenido{
+	min-height: 350px;
+	background:#606060;
+	border-radius: 3px;
+	position: relative;
+}
+
+.image {
+  	display: block;
+  	width: 100%;
+  	height: auto;
+  	backface-visibility: hidden;
+  	opacity: 0;
+	transition: all .5s ease;
+}
+
+.middle {
+  	transition: .5s ease;
+  	opacity: 1;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+}
+.texto{
+	color: #bdbdbd;
+	transition: all .5s ease;
+}
+
+.contenido:hover .image {
+  	opacity: .8;
+}
+
+.contenido:hover .texto {
+  	color: #fff;
+  	transform: scale(1.1);
+}
+//Servicios
+.claro{
+	background: rgba(255, 255, 255, 0.70) !important;
+}
+.btn-block {
+    width: 100%;
+}
+.modal {
+  	width: 70%;
+ 	border-radius: 5px;
+}
+.admin{
+	padding-left: 300px;
+}
+.ck-editor__editable_inline {
+    min-height: 350px;
+}
+.icon{
+	width: 20px;
+	height: 20px;
+	margin-left: 25px;
+}
+.mb{
+	margin-bottom: 10px;
+}
+//Medias
+@media screen and (min-width: 600px) {
+	.hero{
+		background: url('/img/hero.jpg') no-repeat top center;
+		background-size: cover;
+		margin-top: -64px;
+		padding-top: 84px;
+		height: 100vh;
+	}
+	h2{
+		font-size: 59px;
+	}
+}
