@@ -16,7 +16,6 @@
 					@endforeach
 					<a href="{{ route('directory') }}" class="btn azul white-text mb">Todos</a>
 				</div>
-				
 			</div>
 		</div>
 		<div class="row">
@@ -72,6 +71,7 @@
 @endsection
 
 @section('scripts')
+	
 	<script>
 		$(window).scroll(function() {
 	if ($("#menu2").offset().top > 64) {
@@ -82,5 +82,6 @@
 	    $("#menu2").addClass("transparent");
 	}
 });
+
 	</script>
 @endsection

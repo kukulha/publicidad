@@ -42,7 +42,7 @@
                 <div class="collapsible-header center white-text"><i class="fas fa-address-book"></i>Directorio</div>
                 <div class="collapsible-body">
                     <ul class="rojo">
-                        <li><a class="white-text" href="{{ route('cats.index') }}">Categorias</a>
+                        <li><a class="white-text" href="{{ route('cats.index') }}">Categorías</a>
                         <li><a class="white-text" href="{{ route('directories.index') }}">Empresa</a>
                     </ul>
                 </div>
@@ -51,8 +51,8 @@
                 <div class="collapsible-header center white-text"><i class="fas fa-newspaper"></i>  Entradas</div>
                 <div class="collapsible-body">
                     <ul class="rojo">
-                        <li><a class="white-text" href="{{ route('services.index') }}">Servicios</a>
-                        <li><a class="white-text" href="{{ route('stages.index') }}">Etapas</a>
+                        <li><a class="white-text" href="{{ route('categories.index') }}">Categorías</a>
+                        <li><a class="white-text" href="{{ route('posts.index') }}">Artículos</a>
                     </ul>
                 </div>
             </li>

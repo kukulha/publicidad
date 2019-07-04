@@ -29,7 +29,7 @@
                             <li><a href="{{ route('home') }}" class="title bold menu">Inicio</a></li>
                             <li><a href="{{ route('directory') }}" class="title bold menu">Directorio</a></li>
                             <li><a href="" class="title bold menu">Contacto</a></li>
-                            <li><a href="" class="title bold menu">Blog</a></li>
+                            <li><a href="{{ route('blog') }}" class="title bold menu">Blog</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -42,7 +42,7 @@
                             <li><a href="{{ route('home') }}" class="azul-text title bold">Inicio</a></li>
                             <li><a href="{{ route('directory') }}" class="azul-text title bold">Directorio</a></li>
                             <li><a href="" class="azul-text title bold">Contacto</a></li>
-                            <li><a href="" class="azul-text title bold">Blog</a></li>
+                            <li><a href="{{ route('blog') }}" class="azul-text title bold">Blog</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -55,7 +55,7 @@
             <li><a href="{{ route('home') }}" class="white-text bold">Inicio</a></li>
             <li><a href="{{ route('directory') }}" class="white-text bold">Directorio</a></li>
             <li><a href="" class="white-text bold">Contacto</a></li>
-            <li><a href="" class="white-text bold">Blog</a></li>
+            <li><a href="{{ route('blog') }}" class="white-text bold">Blog</a></li>
         </ul>
 
         {{-- Boton Inicio Sesión/Panel de Control --}}

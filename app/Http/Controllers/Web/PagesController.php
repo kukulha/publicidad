@@ -7,7 +7,9 @@ use App\Http\Controllers\Controller;
 use App\Service;
 use App\Stage;
 use App\Cat;
+use App\Category;
 use App\Directory;
+use App\Post;
 
 class PagesController extends Controller
 {
@@ -33,7 +35,7 @@ class PagesController extends Controller
     public function directory()
     {
         $cats = Cat::orderBy('id', 'DESC')->paginate();
-        $directories = Directory::orderBy('name', 'DESC')->paginate();
+        $directories = Directory::orderBy('name', 'ASC')->paginate();
         return view('web.directory', compact('cats', 'directories'));
     }
 
@@ -41,8 +43,28 @@ class PagesController extends Controller
     {
         $cats = Cat::orderBy('id', 'DESC')->paginate();
         $cat = Cat::where('slug', $slug)->pluck('id')->first();
-        $directories = Directory::where('cat_id' , $cat)->orderBy('name', 'DESC')->paginate();
+        $directories = Directory::where('cat_id' , $cat)->orderBy('name', 'ASC')->paginate();
         return view('web.directory', compact('cats', 'directories'));
+    }
+
+    public function blog()
+    {
+        $categories = Category::orderBy('id', 'DESC')->paginate();
+        $posts = Post::orderBy('id', 'DESC')->paginate();
+        return view('web.posts', compact('posts', 'categories'));
+    }
+    public function post($slug)
+    {
+        $post = Post::where('slug', $slug)->first();
+        return view('web.post', compact('post'));
+    }
+
+    public function category($slug)
+    {
+        $categories = Category::orderBy('id', 'DESC')->paginate();
+        $category = Category::where('slug', $slug)->pluck('id')->first();
+        $posts = Post::where('category_id', $category)->orderBy('id', 'DESC')->paginate();
+        return view('web.posts', compact('posts', 'categories'));
     }
 
     public function admin()
