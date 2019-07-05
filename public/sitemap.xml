@@ -2,13 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>http://publicidad.dev/</loc>
-        <lastmod>2019-07-02T21:49:07+00:00</lastmod>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/blog</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/blog/categoria/nueva-categoria</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/blog/categoria/otra-categoria</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/blog/categoria/otra-nueva-categoria</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/directorio</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/directorio/categoria/llantas</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/directorio/categoria/publicidad</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/directorio/categoria/restaurantes</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/directorio/categoria/www.facebook.com</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/directorio/categoria/www.instagram.com</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/directorio/categoria/www.linkedin.com</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/directorio/categoria/www.twitter.com</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://publicidad.dev/directorio/categoria/www.web.com</loc>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>http://publicidad.dev/login</loc>
-        <lastmod>2019-07-02T21:49:07+00:00</lastmod>
+        <lastmod>2019-07-05T23:33:10+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>

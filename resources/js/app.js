@@ -7,6 +7,7 @@ window.$ = window.jQuery = require('jquery')
 require('jquery/dist/jquery');
 require('materialize-css/dist/js/materialize.min');
 require('leaflet/dist/leaflet');
+require('chart.js/dist/Chart.min');
 
 $(document).ready(function(){
 	$('.sidenav').sidenav();
@@ -52,8 +53,7 @@ $(document).ready(function(){
   	});
 
     $('input#excerpt').characterCounter();
-
-
+    $('.scrollspy').scrollSpy();
 });
 
 

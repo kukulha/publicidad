@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <!--SEO Organico -->  
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <title>{{ config('app.name') }} || @yield('title')</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="Kukulha.com.mx">
+    <meta name="designer" content="Kukulha.com.mx">
+    <meta name="robots" content="index,follow" />
+    <meta name="geo.region" content="MX" />
+    @yield('seo')
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -80,6 +83,19 @@
         @endauth
 
         @yield('content')
+
+        <footer class="page-footer azul overflow">
+            <div class="row">
+                <div class="col m6 s12 offset-m3 center">
+                    <img src="/img/logo-bco.png" class="responsive-img" alt="">
+                    <p class="white-text">Aldama #616-A <br>Tel: 3787154957</p>
+                    <a href=""><i class="fab fa-facebook-f small icon f"></i></a>
+                    <a href=""><i class="fab fa-instagram small icon i"></i></a>
+                    <a href=""><i class="far fa-envelope white-text icon small"></i></a>
+                    <a href=""><i class="fab fa-whatsapp small icon w"></i></a>
+                </div>
+            </div>
+        </footer>
 
         <!-- Scripts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

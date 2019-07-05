@@ -10,6 +10,11 @@ use App\Cat;
 use App\Category;
 use App\Directory;
 use App\Post;
+use App\Message;
+use Analytics;
+use Spatie\Analytics\Period;
+use Carbon\Carbon;
+use App\Libraries\GoogleAnalytics;
 
 class PagesController extends Controller
 {
@@ -74,6 +79,10 @@ class PagesController extends Controller
 
     public function admin()
     {
-    	return view('admin.index');
+        $messages = Message::orderBy('id' ,'DESC')->paginate();
+        $services = Service::orderBy('id', 'DESC')->paginate();
+        $posts = Post::orderBy('id', 'DESC')->paginate();
+        $analyticsData = Analytics::fetchTotalVisitorsAndPageViews(Period::months(1));
+    	return view('admin.index', compact('messages', 'services', 'posts', 'analyticsData'));
     }
 }

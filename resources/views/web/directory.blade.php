@@ -24,7 +24,7 @@
 				<div class="card">
 					<div class="card-image">
 						<a href="#{{ $directory->slug }}" class="modal-trigger">
-							<img src="{{ Storage::url($directory->file) }}" class="responsive-img waves-effect waves-block waves-light" alt="">
+							<img src="{{ Storage::url($directory->file) }}" class="responsive-img waves-effect waves-block waves-light" alt="{{ $directory->name }}">
 						</a>
 					</div>
 				</div>
@@ -35,7 +35,7 @@
 			    <div class="modal-content">
 			    	<h3 class="section title azul-text bold"></h3>
 			    	<div class="center">
-			    		<img src="{{ Storage::url($directory->file) }}" class="responsive-img" alt="">
+			    		<img src="{{ Storage::url($directory->file) }}" class="responsive-img" alt="{{ $directory->name }}">
 			    	</div>
 			    	<div class="row">
 			    		<div class="col m6 s12 offset-m3 left-align">

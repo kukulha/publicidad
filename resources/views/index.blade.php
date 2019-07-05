@@ -2,6 +2,52 @@
 
 @section('title', 'Lo mejor en proyectos de comunicación')
 
+@section('seo')
+<meta name="keywords" content="">
+<meta name="description" content="Sabemos de la importancia de generar contenido para tu empresa, por eso hemos especializado nuestros esfuerzos de marketing publicitario generando un entorno creativo para desarrollar tu proyectos de comunicación">
+<meta name="author" content="Kukulha.com">
+<meta name="designer" content="Kukulha.com">
+
+<!--SEO Facebook -->    
+<meta property="og:title" content="{{ config('app.name') }}">
+<meta property="og:description" content="Sabemos de la importancia de generar contenido para tu empresa, por eso hemos especializado nuestros esfuerzos de marketing publicitario generando un entorno creativo para desarrollar tu proyectos de comunicación">
+<meta property="fb:app_id" content=""/>  
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://publicidadenlosaltos.com/">
+<meta property="og:image" content="http://publicidadenlosaltos.com/img/logo.png">
+<meta property=og:locale content="es_MX">
+<meta property="og:site_name" content="{{ config('app.name') }}">
+
+<!--SEO Twitter -->    
+<meta property=twitter:card content="summary">
+<meta property=twitter:title content="{{ config('app.name') }}">
+<meta property=twitter:description content="Sabemos de la importancia de generar contenido para tu empresa, por eso hemos especializado nuestros esfuerzos de marketing publicitario generando un entorno creativo para desarrollar tu proyectos de comunicación">
+<meta property=twitter:creator content="@Kukulha">
+<meta property=twitter:url content="http://publicidadenlosaltos.com">
+<meta property=twitter:image content="http://publicidadenlosaltos.com/img/logo.png">
+
+<!--Schema.org-->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "LocalBusiness",
+            "name": "Publicidad en los Altos",
+            "url": "http://www.publicidadenlosaltos.com",
+            "image": "http://publicidadenlosaltos.com/img/logo.png",
+            "description" : "Sabemos de la importancia de generar contenido para tu empresa, por eso hemos especializado nuestros esfuerzos de marketing publicitario generando un entorno creativo para desarrollar tu proyectos de comunicación",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Tepatitlán",
+                "addressRegion": "MX-JAL",
+                "postalCode": "47670",
+                "streetAddress": "Aldama 616 A"
+            },
+            "telephone": "+52 3787154957",
+            "priceRange": "$"
+        }
+    </script> 
+@endsection
+
 @section('content')
 <header>
 	<div class="hero">
@@ -10,7 +56,7 @@
 				<div class="row">
 					<div class="col m8 s12 offset-m2">
 						<h4 class="white-text">“Contamos con la experiencia y las herramientas necesarias para llevar a cabo tus Proyectos de publicidad”</h4>
-						<a href="" class="btn azul white-text">Conoce nuestros servicios</a>
+						<a href="#servicios" class="btn azul white-text">Conoce nuestros servicios</a>
 					</div>
 				</div>
 			</div>
@@ -28,7 +74,7 @@
 		<div class="row">
 			<div class="col m3 s12">
 				<div class="contenido">
-					<img src="/img/contenido.jpg" class="responsive-img image" alt="">
+					<img src="/img/contenido.jpg" class="responsive-img image" alt="Genera Prospectos">
 					<div class="middle center">
 						<h4 class="texto bold">Genera + <br>Prospectos</h4>
 					</div>
@@ -36,7 +82,7 @@
 			</div>
 			<div class="col m3 s12">
 				<div class="contenido">
-					<img src="/img/contenido.jpg" class="responsive-img image" alt="">
+					<img src="/img/contenido.jpg" class="responsive-img image" alt="Da una mejor imagen a tu empresa">
 					<div class="middle center">
 						<h5 class="texto bold">Da una mejor imagen a tu empresa</h5>
 					</div>
@@ -44,7 +90,7 @@
 			</div>
 			<div class="col m3 s12">
 				<div class="contenido">
-					<img src="/img/contenido.jpg" class="responsive-img image" alt="">
+					<img src="/img/contenido.jpg" class="responsive-img image" alt="Aumenta tu Productividad">
 					<div class="middle center">
 						<h4 class="texto bold">Aumenta tu Productividad</h4>
 					</div>
@@ -52,7 +98,7 @@
 			</div>
 			<div class="col m3 s12">
 				<div class="contenido">
-					<img src="/img/contenido.jpg" class="responsive-img image" alt="">
+					<img src="/img/contenido.jpg" class="responsive-img image" alt="Aumenta el Alcance">
 					<div class="middle center">
 						<h4 class="texto bold">Aumenta el Alcance</h4>
 					</div>
@@ -61,7 +107,7 @@
 		</div>
 	</section>
 
-	<section class="section ">
+	<section class="section">
 		<div class="container">
 			<h4 class="gris-text center title bold">¡Nos emociona</h4>
 			<h2 class="azul-text center title bold">tu proyecto!</h2>
@@ -72,7 +118,7 @@
 		</div>
 	</section>
 	
-	<section class="section center container">
+	<section class="section center container scrollspy" id="servicios">
 		<div class="row">
 			<h4 class="gris-text center  bold">Todo nace a partir del Status de tu empresa</h4>
 			<h2 class="rojo-text center title bold">Iniciando tu empresa</h2>
@@ -81,7 +127,7 @@
 				<div class="col m6 s12">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img src="{{Storage::url($service->file)}}" class="responsive-img activator" alt="">
+						<img src="{{Storage::url($service->file)}}" class="responsive-img activator" alt="{{ $service->name }}">
 					</div>
 					<div class="card-reveal claro">
       					<span class="card-title grey-text text-darken-4"><i class="material-icons center">close</i></span>
@@ -99,7 +145,7 @@
 			    	<p class="small italic">{{ $service->subtitle }}</p>
 			    	<div class="row">
 			    		<div class="col m6 s12">
-			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="">
+			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="{{ $service->name }}">
 			    		</div>
 			    		<div class="col m6 s12">
 			    			
@@ -158,7 +204,7 @@
 				<div class="col m6 s12">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img src="{{Storage::url($service->file)}}" class="responsive-img activator" alt="">
+						<img src="{{Storage::url($service->file)}}" class="responsive-img activator" alt="{{ $service->name }}">
 					</div>
 					<div class="card-reveal claro">
       					<span class="card-title grey-text text-darken-4"><i class="material-icons center">close</i></span>
@@ -176,7 +222,7 @@
 			    	<p class="small italic">{{ $service->subtitle }}</p>
 			    	<div class="row">
 			    		<div class="col m6 s12">
-			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="">
+			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="{{ $service->name }}">
 			    		</div>
 			    		<div class="col m6 s12">
 			    			
@@ -234,7 +280,7 @@
 				<div class="col m6 s12">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img src="{{Storage::url($service->file)}}" class="responsive-img activator" alt="">
+						<img src="{{Storage::url($service->file)}}" class="responsive-img activator" alt="{{ $service->name }}">
 					</div>
 					<div class="card-reveal claro">
       					<span class="card-title grey-text text-darken-4"><i class="material-icons center">close</i></span>
@@ -252,7 +298,7 @@
 			    	<p class="small italic">{{ $service->subtitle }}</p>
 			    	<div class="row">
 			    		<div class="col m6 s12">
-			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="">
+			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="{{ $service->name }}">
 			    		</div>
 			    		<div class="col m6 s12">
 			    			
@@ -310,7 +356,7 @@
 				<div class="col m6 s12">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img src="{{Storage::url($service->file)}}" class="responsive-img activator" alt="">
+						<img src="{{Storage::url($service->file)}}" class="responsive-img activator" alt="{{ $service->name }}">
 					</div>
 					<div class="card-reveal claro">
       					<span class="card-title grey-text text-darken-4"><i class="material-icons center">close</i></span>
@@ -328,7 +374,7 @@
 			    	<p class="small italic">{{ $service->subtitle }}</p>
 			    	<div class="row">
 			    		<div class="col m6 s12">
-			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="">
+			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="{{ $service->name }}">
 			    		</div>
 			    		<div class="col m6 s12">
 			    			
