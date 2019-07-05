@@ -155,10 +155,7 @@ nav ul li a.menu:hover{
 .btn-block {
     width: 100%;
 }
-.modal {
-  	width: 70%;
- 	border-radius: 5px;
-}
+
 .admin{
 	padding-left: 300px;
 }
@@ -173,6 +170,17 @@ nav ul li a.menu:hover{
 .mb{
 	margin-bottom: 10px;
 }
+.act2{
+	padding-top: 0px;
+	border-top: 5px solid #be282c;
+	background: none; 
+}
+.act1{
+	padding-top: 0px;
+	border-top: 5px solid #fff;
+	background: none;
+}
+
 //Medias
 @media screen and (min-width: 600px) {
 	.hero{

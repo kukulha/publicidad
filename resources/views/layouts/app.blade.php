@@ -26,9 +26,8 @@
                         <a href="{{ route('home') }}" class="brand-logo"><img src="/img/logo-bco.png" alt="" width="180px"></a>
                         <a href="#" data-target="movil" class="sidenav-trigger"><i class="material-icons left">menu</i></a>
                         <ul class="hide-on-med-and-down right">
-                            <li><a href="{{ route('home') }}" class="title bold menu">Inicio</a></li>
+                            <li><a href="{{ route('home') }}" class="title bold menu @if(request()->is('/')) act1 @endif">Inicio</a></li>
                             <li><a href="{{ route('directory') }}" class="title bold menu">Directorio</a></li>
-                            <li><a href="" class="title bold menu">Contacto</a></li>
                             <li><a href="{{ route('blog') }}" class="title bold menu">Blog</a></li>
                         </ul>
                     </div>
@@ -40,9 +39,8 @@
                         <a href="#" data-target="movil" class="sidenav-trigger"><i class="material-icons left azul-text">menu</i></a>
                         <ul class="hide-on-med-and-down right">
                             <li><a href="{{ route('home') }}" class="azul-text title bold">Inicio</a></li>
-                            <li><a href="{{ route('directory') }}" class="azul-text title bold">Directorio</a></li>
-                            <li><a href="" class="azul-text title bold">Contacto</a></li>
-                            <li><a href="{{ route('blog') }}" class="azul-text title bold">Blog</a></li>
+                            <li><a href="{{ route('directory') }}" class="azul-text title bold @if(request()->is('directorio')) act2 @endif">Directorio</a></li>
+                            <li><a href="{{ route('blog') }}" class="azul-text title bold @if(request()->is('blog')) act2 @endif">Blog</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -54,7 +52,6 @@
         <ul class="sidenav rojo" id="movil">
             <li><a href="{{ route('home') }}" class="white-text bold">Inicio</a></li>
             <li><a href="{{ route('directory') }}" class="white-text bold">Directorio</a></li>
-            <li><a href="" class="white-text bold">Contacto</a></li>
             <li><a href="{{ route('blog') }}" class="white-text bold">Blog</a></li>
         </ul>
 

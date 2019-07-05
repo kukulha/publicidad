@@ -1,5 +1,7 @@
 @extends('layouts.admin')
 
+@section('title' , 'Servicios/Etapas')
+
 @section('content')
 <main class="admin container">
 	<section class="section">

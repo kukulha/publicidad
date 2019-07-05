@@ -72,7 +72,6 @@
 		</div>
 	</section>
 	
-
 	<section class="section center container">
 		<div class="row">
 			<h4 class="gris-text center  bold">Todo nace a partir del Status de tu empresa</h4>
@@ -97,7 +96,7 @@
 			<div id="{{ $service->slug }}" class="modal">
 			    <div class="modal-content">
 			    	<h3 class="section title azul-text bold">{{ $service->name }}</h3>
-			    	<p class="small italic">'{{ $service->subtitle }}'</p>
+			    	<p class="small italic">{{ $service->subtitle }}</p>
 			    	<div class="row">
 			    		<div class="col m6 s12">
 			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="">
@@ -113,8 +112,40 @@
 			    	</div>
 			    </div>
 			    <div class="modal-footer azul">
-			    	<a href="" class="btn btn-block rojo white-text">Lo quiero</a>
+			    	<a href="#{{$service->name}}" class="btn btn-block rojo white-text modal-trigger modal-close">Lo quiero</a>
 				</div>
+			</div>
+			<!-- Modal Structure -->
+			<div id="{{$service->name}}" class="modal">
+				{{ Form::open(['route' => 'messages.store', 'method' => 'POST', 'role' => 'form']) }}
+			    <div class="modal-content">
+			    	<h3 class="section title azul-text bold">Contacto</h3>
+			    	<div class="row">
+			    		<div class="col m6 offset-m3 s12">
+			    			<div class="left-align">
+				    				<div class="input-field">
+				    					{{ Form::label('name', 'Nombre') }}
+				    					{{ Form::text('name', null) }}
+				    				</div>
+				    				<div class="input-field">
+				    					{{ Form::label('email', 'Correo') }}
+				    					{{ Form::email('email', null) }}
+				    				</div>
+				    				<div class="input-field">
+				    					<label for="phone">Telefono</label>
+				    					<input type="tel" name="phone" >
+				    				</div>
+				    			<input type="hidden" name="service" value="{{ $service->name }}">
+				    			
+			    			</div>
+			    			
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="modal-footer azul">
+			    	{{ Form::submit('Enviar', ['class' => 'btn btn-block rojo white-text'])  }}
+				</div>
+				{{ Form::close() }}
 			</div>
 			@endforeach
 			
@@ -142,7 +173,7 @@
 			<div id="{{ $service->slug }}" class="modal">
 			    <div class="modal-content">
 			    	<h3 class="section title azul-text bold">{{ $service->name }}</h3>
-			    	<p class="small italic">'{{ $service->subtitle }}'</p>
+			    	<p class="small italic">{{ $service->subtitle }}</p>
 			    	<div class="row">
 			    		<div class="col m6 s12">
 			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="">
@@ -158,8 +189,40 @@
 			    	</div>
 			    </div>
 			    <div class="modal-footer azul">
-			    	<a href="" class="btn btn-block rojo white-text">Lo quiero</a>
+			    	<a href="#{{$service->name}}" class="btn btn-block rojo white-text">Lo quiero</a>
 				</div>
+			</div>
+			<!-- Modal Structure -->
+			<div id="{{$service->name}}" class="modal">
+				{{ Form::open(['route' => 'messages.store', 'method' => 'POST', 'role' => 'form']) }}
+			    <div class="modal-content">
+			    	<h3 class="section title azul-text bold">Contacto</h3>
+			    	<div class="row">
+			    		<div class="col m6 offset-m3 s12">
+			    			<div class="left-align">
+				    				<div class="input-field">
+				    					{{ Form::label('name', 'Nombre') }}
+				    					{{ Form::text('name', null) }}
+				    				</div>
+				    				<div class="input-field">
+				    					{{ Form::label('email', 'Correo') }}
+				    					{{ Form::email('email', null) }}
+				    				</div>
+				    				<div class="input-field">
+				    					<label for="phone">Telefono</label>
+				    					<input type="tel" name="phone" >
+				    				</div>
+				    			<input type="hidden" name="service" value="{{ $service->name }}">
+				    			
+			    			</div>
+			    			
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="modal-footer azul">
+			    	{{ Form::submit('Enviar', ['class' => 'btn btn-block rojo white-text'])  }}
+				</div>
+				{{ Form::close() }}
 			</div>
 			@endforeach
 		</div>
@@ -186,7 +249,7 @@
 			<div id="{{ $service->slug }}" class="modal">
 			    <div class="modal-content">
 			    	<h3 class="section title azul-text bold">{{ $service->name }}</h3>
-			    	<p class="small italic">'{{ $service->subtitle }}'</p>
+			    	<p class="small italic">{{ $service->subtitle }}</p>
 			    	<div class="row">
 			    		<div class="col m6 s12">
 			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="">
@@ -202,8 +265,40 @@
 			    	</div>
 			    </div>
 			    <div class="modal-footer azul">
-			    	<a href="" class="btn btn-block rojo white-text">Lo quiero</a>
+			    	<a href="#{{$service->name}}" class="btn btn-block rojo white-text">Lo quiero</a>
 				</div>
+			</div>
+			<!-- Modal Structure -->
+			<div id="{{$service->name}}" class="modal">
+				{{ Form::open(['route' => 'messages.store', 'method' => 'POST', 'role' => 'form']) }}
+			    <div class="modal-content">
+			    	<h3 class="section title azul-text bold">Contacto</h3>
+			    	<div class="row">
+			    		<div class="col m6 offset-m3 s12">
+			    			<div class="left-align">
+				    				<div class="input-field">
+				    					{{ Form::label('name', 'Nombre') }}
+				    					{{ Form::text('name', null) }}
+				    				</div>
+				    				<div class="input-field">
+				    					{{ Form::label('email', 'Correo') }}
+				    					{{ Form::email('email', null) }}
+				    				</div>
+				    				<div class="input-field">
+				    					<label for="phone">Telefono</label>
+				    					<input type="tel" name="phone" >
+				    				</div>
+				    			<input type="hidden" name="service" value="{{ $service->name }}">
+				    			
+			    			</div>
+			    			
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="modal-footer azul">
+			    	{{ Form::submit('Enviar', ['class' => 'btn btn-block rojo white-text'])  }}
+				</div>
+				{{ Form::close() }}
 			</div>
 			@endforeach
 		</div>
@@ -230,7 +325,7 @@
 			<div id="{{ $service->slug }}" class="modal">
 			    <div class="modal-content">
 			    	<h3 class="section title azul-text bold">{{ $service->name }}</h3>
-			    	<p class="small italic">'{{ $service->subtitle }}'</p>
+			    	<p class="small italic">{{ $service->subtitle }}</p>
 			    	<div class="row">
 			    		<div class="col m6 s12">
 			    			<img src="{{ Storage::url($service->file2) }}" class="responsive-img" alt="">
@@ -246,8 +341,40 @@
 			    	</div>
 			    </div>
 			    <div class="modal-footer azul">
-			    	<a href="" class="btn btn-block rojo white-text">Lo quiero</a>
+			    	<a href="#{{$service->name}}" class="btn btn-block rojo white-text">Lo quiero</a>
 				</div>
+			</div>
+			<!-- Modal Structure -->
+			<div id="{{$service->name}}" class="modal">
+				{{ Form::open(['route' => 'messages.store', 'method' => 'POST', 'role' => 'form']) }}
+			    <div class="modal-content">
+			    	<h3 class="section title azul-text bold">Contacto</h3>
+			    	<div class="row">
+			    		<div class="col m6 offset-m3 s12">
+			    			<div class="left-align">
+				    				<div class="input-field">
+				    					{{ Form::label('name', 'Nombre') }}
+				    					{{ Form::text('name', null) }}
+				    				</div>
+				    				<div class="input-field">
+				    					{{ Form::label('email', 'Correo') }}
+				    					{{ Form::email('email', null) }}
+				    				</div>
+				    				<div class="input-field">
+				    					<label for="phone">Telefono</label>
+				    					<input type="tel" name="phone" >
+				    				</div>
+				    			<input type="hidden" name="service" value="{{ $service->name }}">
+				    			
+			    			</div>
+			    			
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="modal-footer azul">
+			    	{{ Form::submit('Enviar', ['class' => 'btn btn-block rojo white-text'])  }}
+				</div>
+				{{ Form::close() }}
 			</div>
 			@endforeach
 		</div>
@@ -263,6 +390,7 @@
 		</div>
 	</section>
 </main>
+
 @endsection
 
 

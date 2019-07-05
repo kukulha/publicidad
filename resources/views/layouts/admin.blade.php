@@ -25,10 +25,22 @@
                 <a href="{{ route('home') }}"><img class="responsive-img" src="/img/logo-bco.png"></a>
             </div>
         </li>
-        <li><a class="white-text titulo" href="{{ route('home') }}"><i class="material-icons white-text">home</i>Ver Página</a></li>
-        <li><a class="white-text" href="{{ route('admin') }}"><i class="material-icons white-text">dashboard</i>Administración</a>
-        <li class="divider"></li>
         <ul class="collapsible expandable">
+            <li>
+                <div>
+                    <a class="collapsible-header center white-text" href="{{ route('home') }}">
+                        <i class="material-icons white-text">home</i>Ver Página
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a class="collapsible-header center white-text" href="{{ route('admin') }}">
+                        <i class="material-icons white-text">dashboard</i>Administración
+                    </a>
+                </div>
+            </li>
+            <li class="divider"></li>
             <li>
                 <div class="collapsible-header center white-text"><i class="fas fa-boxes"></i>Servicios</div>
                 <div class="collapsible-body">
@@ -56,14 +68,25 @@
                     </ul>
                 </div>
             </li>
+            <li>
+                <div>
+                    <a class="collapsible-header center white-text" href="{{ route('messages.index') }}">
+                        <i class="fas fa-envelope"></i>Mensajes
+                    </a>
+                </div>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <div>
+                    <a class="collapsible-header center white-text" href="#!" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <i class="material-icons white-text">close</i>Cerrar Sesión
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </a>
+                </div>
+            </li>
         </ul>
-        <li class="divider"></li>
-        <li class="white-text titulo">
-            <a class="white-text " href="#!" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="material-icons white-text">close</i>Cerrar Sesión</a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf
-            </form>
-        </li>
     </ul>
     
     {{-- Info --}}

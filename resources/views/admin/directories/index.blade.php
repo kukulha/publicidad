@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title' , 'Servicios')
+@section('title' , 'Empresas')
 
 @section('content')
 <main class="admin container">

@@ -67,6 +67,11 @@ class PagesController extends Controller
         return view('web.posts', compact('posts', 'categories'));
     }
 
+    public function gracias()
+    {
+        return view('web.gracias');
+    }
+
     public function admin()
     {
     	return view('admin.index');
