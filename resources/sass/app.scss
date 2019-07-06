@@ -14,6 +14,9 @@ html{
 	font-family: 'Open Sans', sans-serif;
 	min-height: 100vh;
 }
+main{
+	min-height: 72vh;
+}
 .title{
 	text-transform: uppercase;
 }
@@ -127,7 +130,7 @@ nav ul li a.menu:hover{
   	width: 100%;
   	height: auto;
   	backface-visibility: hidden;
-  	opacity: 0;
+  	opacity: 0.3;
 	transition: all .5s ease;
 }
 

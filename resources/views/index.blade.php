@@ -82,7 +82,7 @@
 			</div>
 			<div class="col m3 s12">
 				<div class="contenido">
-					<img src="/img/contenido.jpg" class="responsive-img image" alt="Da una mejor imagen a tu empresa">
+					<img src="/img/imagen.jpg" class="responsive-img image" alt="Da una mejor imagen a tu empresa">
 					<div class="middle center">
 						<h5 class="texto bold">Da una mejor imagen a tu empresa</h5>
 					</div>
@@ -90,7 +90,7 @@
 			</div>
 			<div class="col m3 s12">
 				<div class="contenido">
-					<img src="/img/contenido.jpg" class="responsive-img image" alt="Aumenta tu Productividad">
+					<img src="/img/productividad.jpg" class="responsive-img image" alt="Aumenta tu Productividad">
 					<div class="middle center">
 						<h4 class="texto bold">Aumenta tu Productividad</h4>
 					</div>
@@ -98,7 +98,7 @@
 			</div>
 			<div class="col m3 s12">
 				<div class="contenido">
-					<img src="/img/contenido.jpg" class="responsive-img image" alt="Aumenta el Alcance">
+					<img src="/img/alcance.jpg" class="responsive-img image" alt="Aumenta el Alcance">
 					<div class="middle center">
 						<h4 class="texto bold">Aumenta el Alcance</h4>
 					</div>
@@ -113,7 +113,7 @@
 			<h2 class="azul-text center title bold">tu proyecto!</h2>
 		</div>
 		<div class="section azul center">
-			<a href="" class="btn white azul-text">Manda tu mensaje</a>
+			<a href="https://api.whatsapp.com/send?phone=523781511553" class="btn white azul-text">Manda tu mensaje</a>
 			<p class="white-text">*En una máximo de 24 horas sabrás de nosotros*</p>
 		</div>
 	</section>

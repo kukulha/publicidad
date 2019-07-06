@@ -89,10 +89,10 @@
                 <div class="col m6 s12 offset-m3 center">
                     <img src="/img/logo-bco.png" class="responsive-img" alt="">
                     <p class="white-text">Aldama #616-A <br>Tel: 3787154957</p>
-                    <a href=""><i class="fab fa-facebook-f small icon f"></i></a>
+                    <a href="https://www.facebook.com/publicidadenlosaltos/"><i class="fab fa-facebook-f small icon f"></i></a>
                     <a href=""><i class="fab fa-instagram small icon i"></i></a>
-                    <a href=""><i class="far fa-envelope white-text icon small"></i></a>
-                    <a href=""><i class="fab fa-whatsapp small icon w"></i></a>
+                    <a href="mailto:soporte@kukulha.com"><i class="far fa-envelope white-text icon small"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=523781511553"><i class="fab fa-whatsapp small icon w"></i></a>
                 </div>
             </div>
         </footer>

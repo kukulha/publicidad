@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Lo que mejor sabemos hacer')
+@section('title', 'Las mejores empresas en los Altos de Jalisco')
 
 @section('content')
 <main>
