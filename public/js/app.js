@@ -28473,6 +28473,7 @@ $(document).ready(function () {
   });
   $('input#excerpt').characterCounter();
   $('.scrollspy').scrollSpy();
+  $('.tabs').tabs();
 });
 
 /***/ }),

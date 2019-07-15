@@ -191,6 +191,23 @@ nav ul li a.menu:hover{
 .overflow{
 	overflow-y:hidden; 
 }
+
+.tabs .tab a{
+font-weight: 700; 
+color: #be282c; 
+}
+.tabs .tab a:hover{
+color: #131b37;
+}
+.tabs .indicator{
+background-color: #131b37; 
+height: 3px;
+}
+.tabs .tab a.active
+{
+font-weight: 700;
+color: #f0132c;
+}
 //Medias
 @media screen and (min-width: 600px) {
 	.hero{
