@@ -14,7 +14,7 @@
 <meta property="fb:app_id" content=""/>  
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://publicidadenlosaltos.com/">
-<meta property="og:image" content="http://publicidadenlosaltos.com/img/logo.png">
+<meta property="og:image" content="http://publicidadenlosaltos.com/favicon.ico">
 <meta property=og:locale content="es_MX">
 <meta property="og:site_name" content="{{ config('app.name') }}">
 
@@ -24,7 +24,7 @@
 <meta property=twitter:description content="Sabemos de la importancia de generar contenido para tu empresa, por eso hemos especializado nuestros esfuerzos de marketing publicitario generando un entorno creativo para desarrollar tu proyectos de comunicación">
 <meta property=twitter:creator content="@Kukulha">
 <meta property=twitter:url content="http://publicidadenlosaltos.com">
-<meta property=twitter:image content="http://publicidadenlosaltos.com/img/logo.png">
+<meta property=twitter:image content="http://publicidadenlosaltos.com/favicon.ico">
 
 <!--Schema.org-->
     <script type="application/ld+json">
@@ -119,6 +119,7 @@
 
 	
 	<section class="section center container scrollspy" id="servicios">
+		<h2 class="red-text title bold">Cuentanos en que etapa se encuentra tu empresa</h2>
 		<div class="row hide-on-med-and-down">
 			<ul class="tabs">
 				<li class="tab">
